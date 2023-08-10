@@ -1,0 +1,40 @@
+body{
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    width: 15%;
+}
+
+.display{
+    background-color: beige;
+    width: 100%;
+    text-align: right;
+}
+
+.keypad{
+    border: 2px solid black;
+    width: 100%;
+}
+
+.row{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button{
+    width: 50%;
+    transition: 0.4s;
+}
+
+button:hover{
+    transform: scale(1.1);
+}

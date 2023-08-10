@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="display" id="display">
+            0
+        </div>
+        <div class="keypad">
+            <div class="row">
+                <button onclick="populate(9)">9</button>
+                <button onclick="populate(8)">8</button>
+                <button onclick="populate(7)">7</button>
+                <button onclick="pop()">DEL</button>
+            </div>
+            <div class="row">
+
+                <button onclick="populate(6)">6</button>
+                <button onclick="populate(5)">5</button>
+                <button onclick="populate(4)">4</button>
+                <button onclick="eval(0)">+</button>
+            </div>
+            <div class="row">
+                
+                <button onclick="populate(3)">3</button>
+                <button onclick="populate(2)">2</button>
+                <button onclick="populate(1)">1</button>
+                <button onclick="eval(1)">-</button>
+            </div>
+            <div class="row">
+
+                <button onclick="clean()">AC</button>
+                <button onclick="populate(0)">0</button>
+                <button onclick="startDecimal()">.</button>
+                <button onclick="eval(2)">x</button>
+            </div>
+            <div class="row">
+
+                <button onclick="compute()">=</button>
+                <button onclick="eval(3)">/</button>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
